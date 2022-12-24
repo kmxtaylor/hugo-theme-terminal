@@ -1,0 +1,19 @@
+<div class="about-me">
+  {{ if isset $.Site.Params "portrait" }}
+    {{ if isset $.Site.Params "portraitAlt" }}
+      <img src="{{ $.Site.Params.portrait | absURL }}"
+        class="post-cover"
+        alt="{{ $.Site.Params.portraitAlt }}"
+      />
+    {{ else }}
+      <img src="{{ $.Site.Params.portrait | absURL }}"
+        class="post-cover"
+        alt="Photo of {{ $.Site.Params.Title }}"
+      />
+    {{ end }}
+  {{ end }}
+
+  <div>
+    
+  </div>
+</div>
