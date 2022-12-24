@@ -16,16 +16,9 @@
 {{- end -}}
 
 {{if $cover -}}
-  {{- with .Param "coverAltText" -}}
-    <img src="{{ $cover }}"
-      class="post-cover"
-      alt="{{ . }}"
-    />
-  {{- else -}}
-    <img src="{{ $cover }}"
-      class="post-cover"
-      alt="{{ .Title | plainify | default " " }}"
-    />
-  {{- end -}}
+  <!-- Cover image found -->
+  <img src="{{ $cover }}"
+    class="post-cover"
+    alt="{{ .Title | plainify | default " " }}"
+    title="{{ .Params.CoverCredit |plainify|default "Cover Image" }}" />
 {{- end }}
-
