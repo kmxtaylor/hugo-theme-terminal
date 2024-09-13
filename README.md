@@ -159,11 +159,8 @@ The theme doesn't require any advanced configuration. Just copy:
 ```toml
 baseurl = "/"
 languageCode = "en-us"
-<<<<<<< HEAD
-=======
 # Add it only if you keep the theme in the `themes` directory.
 # Remove it if you use the theme as a remote Hugo Module.
->>>>>>> 1d7e65f42e010c381d0e904e65babd558a78dd14
 theme = "terminal"
 paginate = 5
 
