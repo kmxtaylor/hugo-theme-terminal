@@ -1,4 +1,6 @@
-// Custom styles for katie, kept separate from original theme css (at least for now) 
+/* Custom styles for Katie's personal site, kept separate from original theme css (at least for now) */
+
+@import "variables";
 
 .container {
   max-width: 990px; // even-numbered upper bound of lg
@@ -7,5 +9,12 @@
 .projectLeftImg {
   @include media-breakpoint-up(md) {
     max-width: 500px;
+  }
+}
+
+.index-content .post-cover { // slightly shrink & center my photo
+  @media ($non-phone) {
+    margin: 0 auto;
+    max-width: 80%;
   }
 }
