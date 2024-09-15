@@ -6,7 +6,7 @@
   max-width: 990px; // even-numbered upper bound of lg
 }
 
-.projectLeftImg {
+.projectrightImg {
   @include media-breakpoint-up(md) {
     max-width: 500px;
   }
